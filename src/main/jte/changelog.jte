@@ -182,6 +182,7 @@
         <li><a href="/home">Home</a></li>
         <li><a href="/mybills">My bills</a></li>
         <li><a href="/myinfo">My information</a></li>
+        <li><a href="/sum">SUM</a></li>
         <li><a href="/settings">Settings</a></li>
         <li><a href="/login">Log out</a></li>
     </ul>

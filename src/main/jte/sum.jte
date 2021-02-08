@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 
 @param org.example.User user
+@param org.example.Data data
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bills</title>
+    <title>Document</title>
     <style>
         body{
             background: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v462-n-130-textureidea_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=9465282a2b0a375f4f5b120d7bbad882);
@@ -36,22 +37,9 @@
         ul.nav li:last-child a {
             border-bottom: 1px dashed #FFF;
         }
-        .tab{
-            position: absolute;
-            left: 33%;
-            top: 60px;
-        }
-        .tab{
-            border: 1px;
-            border-color: black;
-        }
-        td{
-            font-size: 40px;
-            color: white;
-        }
 
 		.search-form{
-			margin-top: 240px;
+			margin-top: 100px;
 			position: relative;
 			left: 39%;
 			width: 300px;
@@ -68,13 +56,13 @@
 			flex-wrap: wrap;
 		}
 
-		.login{
+		.login1{
 			color: white;
 			margin-bottom: 10px;
 			font-size: 30px;
 		}
 
-		.pass{
+		.login2{
 			color: white;
 			margin-bottom: 10px;
 			font-size: 30px;
@@ -120,13 +108,6 @@
 			width: 300px;
 			color: black;
 		}
-        .mybank{
-            position: relative;
-            top: 150px;
-            left: 200px;
-            height: 70%;
-            width: 70%;
-        }
     </style>
 </head>
 <body>
@@ -141,15 +122,15 @@
     </ul>
 </div>
 <div class="table">
-    <table class="tab">
-
-        <tr>
-            <td>Balance: ${user.getBalance()}</td>
-        </tr>
-
-    </table>
-
-    <img src="https://alllogos.ru/images/logotip-moy-bank.png" alt="moi bank" class="mybank">
+    <form class="search-form" method="POST" action="/api/fullsum/">
+        <fieldset class="serach-form__wrap">
+            <p class="login1">Login1</p>
+            <input name="log1" type="text" class="logpass_field" placeholder="Enter login1">
+            <p class="login2">Login2</p>
+            <input name="log2" type="text" class="logpass_field" placeholder="Enter login2">
+            <p class="button"><input  class="but-signup" type="submit" value="SUM"></p>
+        </fieldset>
+    </form>
 </div>
 </body>
 </html>

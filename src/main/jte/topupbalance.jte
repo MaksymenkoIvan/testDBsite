@@ -179,11 +179,12 @@
 <body>
 <div class="navigation">
     <ul class="nav">
-        <li><a href="/home">Главная</a></li>
-        <li><a href="/mybills">Мои счета</a></li>
-        <li><a href="/myinfo">Моя информация</a></li>
-        <li><a href="/settings">Настройки</a></li>
-        <li><a href="/login">Выход</a></li>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/mybills">My bills</a></li>
+        <li><a href="/myinfo">My information</a></li>
+        <li><a href="/sum">SUM</a></li>
+        <li><a href="/settings">Settings</a></li>
+        <li><a href="/login">Log out</a></li>
     </ul>
 </div>
 
